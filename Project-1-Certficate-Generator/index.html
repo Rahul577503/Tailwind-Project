@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,900&family=Oxygen:wght@300;400;700&family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="font-dm-sans bg-gray-200 min-h-screen flex items-center justify-center flex-col ">
+    <h1 class="text-4xl font-bold mt-8">Certificate Generator</h1>
+    <div class="certificate-container bg-white p-8 rounded-lg shadow-md mt-8 sm:w-6/5 md:mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Certificate of Achievement</h1>
+        <p class="text-gray-600">This is to certify that</p>
+        <input type="text" id="nameInput" placeholder="Recipient's Name" class="border rounded px-2 py-1 my-2 w-full">
+        <p class="text-gray-600">has successfully completed the course</p>
+        <input type="text" id="courseInput" placeholder="Course Name" class="border rounded px-2 py-1 my-2 w-full">
+        <p class="text-gray-600">on</p>
+        <input type="date" id="dateInput" class="border rounded px-2 py-1 my-2 w-full" required>
+        <button id="generateCertificate" class="bg-blue-500 text-white px-4 py-2 rounded mt-4 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-200">Generate Certificate</button>
+        <div class="particles"></div>
+    </div>
+    <div class="certificate-preview mt-8 text-center">
+        <div id="certificate" class="certificate hidden bg-white p-8 rounded-lg shadow-md w-96">
+            <div class="header bg-blue-500 text-white p-4 rounded-t-lg">
+                <h1 class="text-2xl font-bold">Certificate of Achievement</h1>
+            </div>
+            <div class="content">
+                <p class="text-gray-600">This is to certify that</p>
+                <p id="recipientName" class="font-semibold"></p>
+                <p class="text-gray-600">has successfully completed the course</p>
+                <p id="courseName" class="font-semibold"></p>
+                <p class="text-gray-600">on</p>
+                <p id="completionDate" class="font-semibold"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-image: linear-gradient(to right top, #0059ff, #0057f7, #0055ef, #0052e7, #0050df, #004ccf, #0048c0, #0044b0, #003c95, #00347b, #072c61, #0e2348);
+}
+
+h1 {
+    background: linear-gradient(to left top, #ffffff, #e2e3fe, #bcc9ff, #88b2ff, #1c9eff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.certificate-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.certificate {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.432);
+}
